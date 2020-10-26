@@ -1,6 +1,6 @@
 # JsBlog
 - 利用 Js Html Css 写的 前后端 (Js 后端) 博客
-- 图片
+
 ![image](https://github.com/artisanbox/JsBlog/blob/main/demoImage/index.png)
 ![image](https://github.com/artisanbox/JsBlog/blob/main/demoImage/article.png)
 ![image](https://github.com/artisanbox/JsBlog/blob/main/demoImage/comment.png)
