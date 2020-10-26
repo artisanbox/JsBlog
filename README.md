@@ -1,5 +1,5 @@
 # JsBlog
-- 利用 Js Html Css 写的 前后端 (Js 后端) 博客
+- 利用 Js Html Css 写的 前后端 博客, 其中 后端是用的 Js
 
 ![image](https://github.com/artisanbox/JsBlog/blob/main/demoImage/index.png)
 ![image](https://github.com/artisanbox/JsBlog/blob/main/demoImage/article.png)
