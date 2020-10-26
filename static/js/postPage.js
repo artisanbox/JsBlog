@@ -2,10 +2,11 @@ var titleTemplate = function(blog) {
     var title = blog.title
     var d = new Date(blog.created_time * 1000)
     var time = d.toLocaleString() 
+    var author = blog.author
     var t = `
     <h2>${title}</h2>
     <span class="author">
-        gua
+        ${author}
     </span>
     <ver-line></ver-line>
     <span class="date">
