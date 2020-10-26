@@ -5,3 +5,5 @@
 - 评论发布, 删除, 修改
 
 ![image](https://github.com/artisanbox/JsBlog/blob/main/demoImage/index.png)
+![image](https://github.com/artisanbox/JsBlog/blob/main/demoImage/article.png)
+![image](https://github.com/artisanbox/JsBlog/blob/main/demoImage/comment.png)
