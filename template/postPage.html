@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Page - My Blog</title>
+    <link rel="stylesheet" href="css/page.css">
+    <script src="js/utils.js"></script>
+    <style>
+        .article-comment {
+            display: block;
+            width: 780px;
+            height: 50%;
+            background-color: white;
+            margin: 0px 60px;
+            border: 1px solid blue;
+            float: left;
+            text-align: center;
+        }
+        .comment-text {
+            width: 150px;
+            height: 22px;
+        }
+        .comment-input {
+            margin: 20px 0;
+        }
+        .comment-button {
+            display: block;
+            border-radius: 14px;
+            font-size: 19px;
+            width: 90px;
+            height: 35px;
+            background-color: gainsboro;
+            transition: 1s;
+            border: none;
+            text-decoration: none;
+            margin: 20px auto;
+        }
+        .comment-button:hover {
+            background-color: blueviolet;
+            transition: 1s;
+        }
+        .comment-cell {
+            text-align: left;
+            border: 1px solid blueviolet;
+            margin: 10px;
+            padding: 5px 20px;
+        }
+        .comment-author {
+            margin: 10px;
+            color: royalblue;
+        }
+        .comment-content-2 {
+            margin: 10px;
+            background-color: aliceblue;
+            padding: 5px 10px;
+        }
+        .comment-name {
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .comment-date {
+            font-size: 15px;
+            color: black;
+        }
+        .comment-author a {
+            color: #5151cc;
+            text-decoration: none;
+        }
+        .comment-author a:hover {
+            text-decoration: underline;
+        }
+        #id-comm-response {
+            font-size: 17px;
+            font-weight: 600;
+            margin-right: 5px;
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav"></div>
+    <div class="article-main">
+        <div class="warp">
+            <div class="article-content">
+                <div class="article-title">
+                </div>
+                <fixed></fixed>
+                <div class="article-text">  
+                </div>
+            </div>
+            <div class="article-bar">
+                <h3 class="author-bar-name">Author Information</h3>
+                <div class="author-bar-avatar">
+                    <img class="avatar" src="/images/avatar.png" alt="">
+                </div>
+                <div class="author-bar-info">
+                    <p>NAME: JUANTU</p>
+                    <p>WEBSITE: JUANTU.CN</p>
+                </div>
+            </div>
+        </div>
+        <div class="article-comment">
+            <h3>评论</h3>
+            <div class="comment-content">
+                <textarea id="id-input-content" type="text" value="" rows="7" cols="60"></textarea>
+            </div>
+            <div class="comment-input">
+                <input class="comment-text" id="id-input-name" placeholder="姓名" type="text" value="">
+                <input class="comment-text" id="id-input-email" placeholder="邮箱" type="text" value="">
+                <input class="comment-text" id="id-input-website" placeholder="网址" type="text" value="">
+                <button class="comment-button">发布</button>
+                <div class="comment-list">
+                    <div class="comment-cell">
+                        <div class="comment-author">
+                            gen
+                            <p class="comment-date">2020/10/13</p>
+                        </div>
+                        <div class="comment-content-2">
+                            <p>dudududududu</p>
+                            <p>dudududududu</p>
+                            <p>dudududududu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main-footer"></div>
+    <script src='js/blogPublicElement.js'></script>
+    <script src="js/postPage.js"></script>
+</body>
+</html>
