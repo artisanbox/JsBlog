@@ -9,16 +9,17 @@
     <style>
         .article-comment {
             display: block;
-            width: 780px;
+            width: 1050px;
             height: 50%;
             background-color: white;
             margin: 0px 60px;
+            padding: 10px;
             border: 1px solid blue;
             float: left;
             text-align: center;
         }
         .comment-text {
-            width: 150px;
+            width: 200px;
             height: 22px;
         }
         .comment-input {
@@ -43,7 +44,7 @@
         .comment-cell {
             text-align: left;
             border: 1px solid blueviolet;
-            margin: 10px;
+            margin: 10px 70px;
             padding: 5px 20px;
         }
         .comment-author {
@@ -77,12 +78,21 @@
             color: black;
             text-decoration: none;
         }
+        .comment-content textarea {
+            resize: none;
+            font-size: 20px;
+            width: 900px;
+        }
+        .comment-container {
+            width: 1200px;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
     <div class="nav"></div>
     <div class="article-main">
-        <div class="warp">
+        <div class="article-container">
             <div class="article-content">
                 <div class="article-title">
                 </div>
@@ -90,7 +100,7 @@
                 <div class="article-text">  
                 </div>
             </div>
-            <div class="article-bar">
+            <!-- <div class="article-bar">
                 <h3 class="author-bar-name">Author Information</h3>
                 <div class="author-bar-avatar">
                     <img class="avatar" src="/images/avatar.png" alt="">
@@ -99,28 +109,30 @@
                     <p>NAME: JUANTU</p>
                     <p>WEBSITE: JUANTU.CN</p>
                 </div>
-            </div>
+            </div> -->
         </div>
-        <div class="article-comment">
-            <h3>评论</h3>
-            <div class="comment-content">
-                <textarea id="id-input-content" type="text" value="" rows="7" cols="60"></textarea>
-            </div>
-            <div class="comment-input">
-                <input class="comment-text" id="id-input-name" placeholder="姓名" type="text" value="">
-                <input class="comment-text" id="id-input-email" placeholder="邮箱" type="text" value="">
-                <input class="comment-text" id="id-input-website" placeholder="网址" type="text" value="">
-                <button class="comment-button">发布</button>
-                <div class="comment-list">
-                    <div class="comment-cell">
-                        <div class="comment-author">
-                            gen
-                            <p class="comment-date">2020/10/13</p>
-                        </div>
-                        <div class="comment-content-2">
-                            <p>dudududududu</p>
-                            <p>dudududududu</p>
-                            <p>dudududududu</p>
+        <div class="comment-container">
+            <div class="article-comment">
+                <h3>评论</h3>
+                <div class="comment-content">
+                    <textarea id="id-input-content" type="text" value="" rows="7" cols="60"></textarea>
+                </div>
+                <div class="comment-input">
+                    <input class="comment-text" id="id-input-name" placeholder="姓名" type="text" value="">
+                    <input class="comment-text" id="id-input-email" placeholder="邮箱" type="text" value="">
+                    <input class="comment-text" id="id-input-website" placeholder="网址" type="text" value="">
+                    <button class="comment-button">发布</button>
+                    <div class="comment-list">
+                        <div class="comment-cell">
+                            <div class="comment-author">
+                                gen
+                                <p class="comment-date">2020/10/13</p>
+                            </div>
+                            <div class="comment-content-2">
+                                <p>dudududududu</p>
+                                <p>dudududududu</p>
+                                <p>dudududududu</p>
+                            </div>
                         </div>
                     </div>
                 </div>

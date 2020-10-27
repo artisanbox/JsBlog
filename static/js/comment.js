@@ -20,7 +20,7 @@ var commentTemplate = function(comment) {
     var t = `
     <div class="admin-article-details">
         <div class="admin-article-title">
-            <a href="/blog?id=${blogId}&&comment=${id}"><h2>[评论]${content}</h2></a>
+            <a href="/blog?id=${blogId}&comment=${id}"><h2>[评论]${content}</h2></a>
         </div>
         <div class="admin-article-title">
             <a id="id-comment-blog" href="/blog?id=${blogId}"><h2>[来源]${blogTitle}</h2></a>

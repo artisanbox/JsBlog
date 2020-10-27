@@ -27,10 +27,10 @@ var insertToLine = function(b) {
     var html = ''
     var content = b.content
     var lineList = content.split('\n')
-    console.log("lineList", lineList)
+    // console.log("lineList", lineList)
     for(var i = 0; i < lineList.length; i++) {
         var line = lineList[i]
-        console.log("line", line)
+        // console.log("line", line)
         var t = contentTemplate(line)
         html += t
     }
@@ -43,13 +43,13 @@ var insertContent = function(blogs, id) {
         var b = blogs[i]
         if(b !== null) {
             if(b.id === id) {
-                console.log("b", b)
+                // console.log("b", b)
                 html = insertToLine(b)
             }
         }
     }
     // 把数据写入 .article-text 中, 直接用覆盖式写入
-    console.log("html", html)
+    // console.log("html", html)
     var div = document.querySelector('.article-text')
     div.innerHTML = html
 }
@@ -60,12 +60,12 @@ var insertTitle = function(blogs, id) {
         var b = blogs[i]
         if(b !== null) {
             if(b.id === id) {
-                console.log("b", b)
+                // console.log("b", b)
                 html = titleTemplate(b)
             }
         }
     }
-    console.log("html", html)
+    // console.log("html", html)
     var div = document.querySelector('.article-title')
     div.innerHTML = html
 }
@@ -77,13 +77,13 @@ var blogAll = function(id) {
         contentType: 'application/json',
         callback: function(response) {
             // 不考虑错误情况(断网/服务器返回错误等等)
-            console.log('响应', response)
+            // console.log('响应', response)
             var blogs = JSON.parse(response)
             insertContent(blogs, id)
             insertTitle(blogs, id)
         }
     }
-    console.log("dudududuududu")
+    // console.log("dudududuududu")
     ajax(request)
 }
 
@@ -111,7 +111,7 @@ var commentTemplate = function(comment) {
     var time = d.toLocaleString()
     var id = comment.id
     var website = comment.website
-    log("time", time)
+    // log("time", time)
     var t = 
     `
     <div class="comment-cell" id="id-comment-${id}">
@@ -137,7 +137,7 @@ var insertComment = function(comments) {
         }
     }
     // 把数据写入 .article-text 中, 直接用覆盖式写入
-    console.log("html", html)
+    // console.log("html", html)
     var div = document.querySelector('.comment-list')
     div.innerHTML = html
 }
@@ -149,12 +149,11 @@ var commentAll = function() {
         contentType: 'application/json',
         callback: function(response) {
             // 不考虑错误情况(断网/服务器返回错误等等)
-            console.log('响应', response)
+            // log('响应', response)
             var comments = JSON.parse(response)
             insertComment(comments)
         }
     }
-    console.log("dudududuududu")
     ajax(request)
 }
 
@@ -166,7 +165,7 @@ var commentNew = function(form) {
         data: data,
         contentType: 'application/json',
         callback: function(response) {
-            console.log('响应', response)
+            // console.log('响应', response)
             var res = JSON.parse(response)
         }
     }
@@ -206,10 +205,13 @@ var commentId = function() {
         url: '/api/comment/cId',
         contentType: 'application/json',
         callback: function(response) {
-            if(response !== undefined || response !== null) {
-                console.log('commentId 响应', response)
+            // 下面要使用这样的方法来进行判断
+            if(response == typeof(undefined)) {
+                // console.log('错误响应', response)
+            } else {
+                // console.log('正常响应', response)
                 var cId = JSON.parse(response)
-                console.log('cId', cId)
+                // console.log('cId', cId)
                 scrollToComment(cId)
             }
         }
