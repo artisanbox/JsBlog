@@ -1,9 +1,10 @@
 # JsBlog
 - 利用 Js Html Css 写的 前后端 博客, 其中 后端是用的 Js
 
-![image](https://github.com/artisanbox/JsBlog/blob/main/demoImage/index.png)
-![image](https://github.com/artisanbox/JsBlog/blob/main/demoImage/article.png)
-![image](https://github.com/artisanbox/JsBlog/blob/main/demoImage/comment.png)
+![image](https://juantu.cn/wp-content/uploads/2020/10/index.png)
+![image](https://juantu.cn/wp-content/uploads/2020/10/article.png)
+![image](https://juantu.cn/wp-content/uploads/2020/10/article.png)
+![image](https://juantu.cn/wp-content/uploads/2020/10/adminPost.png)
 ## 博客功能
 - 博客文章: 发布, 删除, 修改
 - 评论: 发布, 删除, 修改
